@@ -29,6 +29,22 @@ export default App;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 MOSTRAR ESTADO
 
 
@@ -51,6 +67,20 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -160,6 +190,20 @@ function App() {
 
 
 export default App
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
