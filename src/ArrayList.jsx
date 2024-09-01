@@ -1,70 +1,3 @@
-MANEJO DE ESTADO EN TIEMPO REAL
-
-import { useState } from "react";
-
-function App() {
-  //Estado
-  const [valorInput, setValorInput] = useState('');
-
-  //Muestra en tiempo real lo que se esta teniendo de valor en el target
-  const onChange = (e) => {
-    const valor = e.target.value;
-    setValorInput(valor);
-  }
-
-  return (
-    <div className="App">
-      <input value={valorInput} onChange={evento => onChange(evento)}/>
-      <p>{valorInput}</p>
-    </div>
-  )
-}
-
-export default App;
-
-
-
-
-
-
-
-
-
-
-MOSTRAR ESTADO
-
-
-import { useState } from "react";
-
-function App() {
-  //ESTADO  
-  const [num, setNum] = useState(0); //Integers, String, Etc
-
-  const sumar = () => {
-    setNum(num + 1);
-  }
-
-  return (
-    <div className="App">
-      <button onClick={sumar}>SUMAR</button>
-      <p>{num}</p>
-    </div>
-  )
-}
-
-export default App;
-
-
-
-
-
-
-
-
-MOSTRAR UN ARRAY
-
-
-import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const nombre = "Piter"
@@ -77,7 +10,7 @@ const list = [
 ]
 
 
-function App() {
+function ArrayList() {
   const items = [];
   const items2 = [];
   const items3 = [];
@@ -162,38 +95,4 @@ function App() {
 }
 
 
-export default App
-
-
-
-
-
-
-
-
-
-
-ESTADO AVANZANDO CON PROCESO ASINCRONO
-
-import { useState } from "react";
-
-function App() {
-
-  const [counter, setCounter] = useState(0)
-
-  //Se recomiendo usarlo de esta manera ya que es un proceso asincrono 
-  const onClick = () => {
-    setCounter((counter) => counter + 1)
-    setCounter((counter) => counter + 1)
-  }
-
-  return (
-    <div className="App">
-      <p>{counter}</p>
-      <button onClick={onClick}>AGREGAR 2 +</button>
-    </div>
-  )
-}
-
-
-export default App; 
+export default ArrayList;
